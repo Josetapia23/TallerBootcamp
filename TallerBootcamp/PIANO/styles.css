@@ -1,0 +1,41 @@
+
+body {  /*tramaos de centrar las telcas del piano en el centro de la pantalla y le damos color de fondo */
+  background-color: #2170be;
+  margin-top: 200px;
+  padding-left: 280px;
+}
+
+div, h1{
+  color: aliceblue;
+  margin-bottom: 40px;
+}
+.piano {
+  display: flex; /*usamos la propiead display flex para posicionar las cajas una al lado de la otra*/
+}
+
+.key { /*Adactamos al tamaño que necesitamos*/
+  height: 220px;
+  width: 51px;
+}
+
+.white {
+  width: 100px;
+  height: 350px;
+  background-color: white;
+  border-left: 1px solid #333;
+}
+
+.white.active { /*con activate lo que hacemos es que al precionar las cajas señaladas con la etiqueta class, esta resaltara cambiando de color.*/
+  background-color: #CCC;
+}
+
+.black {
+  background-color: black;
+  margin-left: -28px;
+  margin-right: -28px;
+  z-index: 2;
+}
+
+.black.active { /*con activate lo que hacemos es que al precionar las cajas señaladas con la etiqueta class, esta resaltara cambiando de color.*/
+  background-color: rgb(70, 68, 68);
+}
